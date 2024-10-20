@@ -286,7 +286,7 @@ class PConvUnet(object):
             *args: arguments to be passed to fit_generator
             **kwargs: keyword arguments to be passed to fit_generator
         """
-        self.model.fit(
+        self.model.fit_generator(
             generator,
             *args, **kwargs
         )
